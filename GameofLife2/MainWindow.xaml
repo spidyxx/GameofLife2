@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameofLife2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600.716" Width="818.84">
     <Grid>
-        
+        <Canvas x:Name="drawarea" Margin="150,50,50,50" VerticalAlignment="Top" MinHeight="500" MinWidth="500" HorizontalAlignment="Left"/>
+        <Button Content="Initialize!" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="75" Click="ButtonStart_Click"/>
+        <Button x:Name="ButtonStartStop" Content="Start Timer" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="75" Click="ButtonTimer_Click"/>
+        <TextBox x:Name="TextBoxdimvert" HorizontalAlignment="Left" Height="23" Margin="10,134,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,118,0,0" TextWrapping="Wrap" Text="dimension vertical" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxdimhor" HorizontalAlignment="Left" Height="23" Margin="10,178,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="dimension horizontal" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxtimeintervall" HorizontalAlignment="Left" Height="23" Margin="10,222,0,0" TextWrapping="Wrap" Text="0,2" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" Text="Time Interval (s)" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxrandom" HorizontalAlignment="Left" Height="23" Margin="10,266,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,250,0,0" TextWrapping="Wrap" Text="% of alive (random)" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxminnr" HorizontalAlignment="Left" Height="23" Margin="10,310,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,294,0,0" TextWrapping="Wrap" Text="min nr of neighbors" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxmaxnr" HorizontalAlignment="Left" Height="23" Margin="10,354,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,338,0,0" TextWrapping="Wrap" Text="max nr of neighbors" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxalivenr" HorizontalAlignment="Left" Height="23" Margin="12,398,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,382,0,0" TextWrapping="Wrap" Text="create new at" VerticalAlignment="Top"/>
+        <Button Content="Kill all" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Width="75" Click="ButtonKill_Click"/>
+
     </Grid>
 </Window>
